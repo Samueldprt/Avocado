@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Supplements</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+
+        <style>
+            body{
+                font-family: 'Raleway', sans-serif;
+                background-color:#5F6F52 ;
+                margin: 0;
+                padding: 0;
+            }
+
+            /* width */
+            ::-webkit-scrollbar {
+              width: 10px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+              background: #c8d4a1;
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+              background: #768a66;
+            }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+              background: #4e5c44;
+            }
+
+            a{
+                text-decoration: none;  /* Unterstreichung entfernen */
+            }
+
+            .navbar{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-right: 40px;
+            }
+            
+            .headline {
+                color:#FEFAE0;
+                margin-left: 100px;    
+                margin-right: 100px;
+                font-size: 80px;
+                line-height: 29px;
+                font-weight: bolder;    /* h1 margin and font weight*/
+                margin-top: 0.67em;     /* h1 margin and font weight*/
+                margin-bottom: 0.67em;  /* h1 margin and font weight*/
+            }
+
+            .subtext{
+                color: #A9B388;
+                font-size: 20px;
+                
+            }
+
+            .logo{
+                width: 120px;
+                padding-right: 120px;
+                object-fit: cover;
+
+            }
+
+            p a{
+                color: #A9B388;
+                margin-left: 14px;
+                font-weight: bold;
+            }
+
+            p a:hover {
+                color: #959e78;
+            }
+
+            .image-container{
+                background-color: #FEFAE0;
+            }
+            
+            .header-image{
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                object-position: 50% 46%;
+            }
+
+            .text-container{
+                text-align: center;
+                background-color: #FEFAE0;
+                color: #4e5c44;
+                font-weight: 600;
+                font-size: 60px;
+                Padding-top: 50px;
+                padding-bottom: 64px;
+            }
+
+            .description{
+                font-size: 30px;
+                font-weight: 450;
+                display:flex;
+                line-height: 50px;
+                padding-left: 200px;
+                padding-right: 200px;
+            }
+
+            button{
+                background-color: #7c916b;
+                color: #FEFAE0;
+                border: none;   
+                height: 32px;
+                width: 466px;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            button:hover{
+                background-color: #536348;
+                color: #d3cfb9;
+                cursor: pointer;
+            }
+
+            .video-container{
+                display: flex;
+                justify-content: center;
+                margin-top: 60px;
+                margin-bottom: 60px;
+            }
+
+            .shop-container{
+                background-color: #FEFAE0;
+                padding-top: 10px;
+                padding-bottom: 60px;
+            }
+
+            .shop-headline{
+                font-size: 60px;
+                font-weight: 600;
+                text-align: center;
+                color: #44503b;
+                margin-top: 30px;
+            }
+
+            .products{
+                display: flex;
+                justify-content: space-between;   
+                align-items: end;
+                margin-left: 300px;
+                margin-right: 300px;
+            }
+
+            .product-1{
+                height: 100%;
+                width: 200px;
+            }
+
+            .product-2{
+                height: 100%;
+                width: 150px;
+            }
+
+            .product-names{
+                justify-content: space-between;
+                display: flex;
+                font-size: 25px;
+                font-weight: 700;
+                margin-top: 10px;
+                
+            }
+
+            .name-1{
+                margin-left: 205px;
+            }
+
+            .name-2{
+                margin-right: 20px;
+            }
+
+            .name-3{
+                margin-right: 205px;
+            }
+
+            .a-2{
+                color: #4e5c44;
+            }
+
+
+            .product-description-container{
+                display:flex;
+                justify-content:space-between ;
+                font-size: 16px;
+                font-weight: 600;
+                text-align: center;
+                margin-top: 15px;   
+                color: #4e5c44;            
+            }
+
+            .product-description-1{
+                margin-left: 11%;
+                width: 400px;
+            }
+
+            .product-description-2{
+                width: 400px;
+            }
+
+            .product-description-3{
+                width: 400px;
+                margin-right: 10%;
+            }
+
+            .closing-image{
+                object-fit: cover;
+                width: 100%;
+                height: 200px;
+                object-position: 50% 76%;
+                background-color: #4e5c44;
+            }
+            .legal-content{
+                background-color: #5F6F52;
+                font-weight: 700;
+                font-size: 13px;
+                text-align: center;
+                color: #B99470;
+            }
+
+            .imprint{
+                color: #B99470;
+                margin-right:20px;
+                margin-left: 20px;
+            }
+
+            .imprint:hover{
+                color: #a08162;
+            }
+
+            .data-policy{
+                color: #B99470;
+                margin-left: 20px;
+            }
+
+            .data-policy:hover{
+                color: #a08162;
+            }
+
+            .brand-name{
+                margin-right: 20px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a href="file:///f%3A/Dateien/Coding%20Projekts/Avocado/index.html#" class="headline"> 
+                Avocado <br> <span class="subtext">  Its all about the nutrients.</span>
+            </a> 
+
+            <img class="logo" src="./images/Avocado Logo.png">
+
+            <div>
+                <p>
+                    <a href="https://www.instagram.com/samueldprt/" > Instagram </a> 
+                    <a href="https://github.com/xNuk3m" > GitHub </a>
+                    <a href="https://www.youtube.com/channel/UC0GvxIorfzXKewknR-4Apug" > YouTube </a> 
+                    <a href="https://www.linkedin.com/in/samuel-dippert-815997274/" > LinkedIn </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img class="header-image" src="./images/supplements 4.jpg">
+        </div>
+
+        <div class="text-container">
+            Support your immune system <br> <br>
+            <span class="description">
+                Avocado-based health supplements are nutritional powerhouses, providing heart-healthy monounsaturated fats, fiber for digestion, and a wealth of vitamins. Packed with antioxidants, they boost immunity and combat oxidative stress. Convenient and concentrated, these supplements offer an easy way to incorporate avocado's myriad health benefits into daily wellness practices.            
+            </span>
+            <button onclick="location.href='https://www.geo.de/wissen/ernaehrung/vitamin-lexikon/20702-rtkl-avocados-diese-vitamine-stecken-drin'" type="button">
+                Learn more</button>
+            </button>
+        </div>
+        <div class="video-container">
+            <iframe width="1000" height="563" src="https://www.youtube.com/embed/VhVqz4KuEgI?si=arBE8myccIuBfpFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="shop-container">
+            <p class="shop-headline">
+                We Recommend
+            </p>
+            <div class="products">
+            <a href="https://www.amazon.de/Mariendistel-Artischocke-L%C3%B6wenzahn-Komplex-Vergleichssieger/dp/B07JPYWCDV/ref=sr_1_6?crid=1F3PLFUC8OC0P&keywords=avocado+supplement&qid=1701351110&sprefix=%2Caps%2C607&sr=8-6">
+                <img class="product-1" src="./images/product 1.png"> </a>
+            <a href="https://www.amazon.de/Avocadoflex-exklusiven-Avocado-Soja-Unverseifbare-handgefertigt-Wusnchkapsel-Manufaktur/dp/B09TWL3XT6/ref=sr_1_5?crid=1F3PLFUC8OC0P&keywords=avocado+supplement&qid=1701351110&sprefix=%2Caps%2C607&sr=8-5">
+                <img class="product-2" src="./images/product 2.png"> </a>
+            <a href="https://www.amazon.de/Indigo-Herbs-Avocado-Pulver-250g/dp/B07FYCMJ2L/ref=sr_1_10?crid=1F3PLFUC8OC0P&keywords=avocado%2Bsupplement&qid=1701351110&sprefix=%2Caps%2C607&sr=8-10&th=1">
+                <img class="product-1" src="./images/product 3.png"> </a>
+            </div>
+            <div class="product-names">
+                <a href="https://www.amazon.de/Mariendistel-Artischocke-L%C3%B6wenzahn-Komplex-Vergleichssieger/dp/B07JPYWCDV/ref=sr_1_6?crid=1F3PLFUC8OC0P&keywords=avocado+supplement&qid=1701351110&sprefix=%2Caps%2C607&sr=8-6" class="name-1 a-2" >
+                    Mariendistel Artischocke Komplex
+                </a>
+                <a href="https://www.amazon.de/Avocadoflex-exklusiven-Avocado-Soja-Unverseifbare-handgefertigt-Wusnchkapsel-Manufaktur/dp/B09TWL3XT6/ref=sr_1_5?crid=1F3PLFUC8OC0P&keywords=avocado+supplement&qid=1701351110&sprefix=%2Caps%2C607&sr=8-5" class="name-2 a-2" >
+                    Avocadoflex Pur
+                </a>    
+                <a href="https://www.amazon.de/Indigo-Herbs-Avocado-Pulver-250g/dp/B07FYCMJ2L/ref=sr_1_10?crid=1F3PLFUC8OC0P&keywords=avocado%2Bsupplement&qid=1701351110&sprefix=%2Caps%2C607&sr=8-10&th=1" class="name-3 a-2" >
+                    Indigo Herbs Bio Avocado Pulver
+                </a>
+            </div>
+
+            <div class="product-description-container">
+                <span class="product-description-1">
+                    Unser Mariendistel Komplex enthält Extrakte aus Mariendistel, Artischocke und Löwenzahn. <br>
+                    Er vereint damit viele sekundäre Pflanzenstoffe, wertvolle Bitterstoffe und natürliche Antioxidantien für dein gutes Bauchgefühl.
+                </span>
+                <span class="product-description-2">
+                    „Avocado-Sojabohne-Unverseifbare“, die auch als ASU abgekürzt wird, ist ein Lipid-Komplex und reich an Phytosterolen, Triterpenen sowie Vitamin E und Carotinoiden. <br>
+                    Avocadoflex, als patentierte Substanz weist eine standardisierte Zusammensetzung der Phytosterole im Verhältnis von 1:2 (Avocado-zu-Soja-Phytosterole) sowie einen Gesamtgehalt von mindestens 30% Phytosterolen auf.
+                </span>
+                <span class="product-description-3">
+                    Bio-Avocado-Pulver von Indigo Herbs wird aus außergewöhnlich hochwertigen Avocados hergestellt, die für ihren gesunden Fettgehalt und ihr unglaubliches Nährstoffprofil bekannt sind. <br>
+                    Mit dem höchsten Proteingehalt und dem niedrigsten Zuckergehalt aller Früchte sind Avocados auch reich an Ballaststoffen und Antioxidantien.
+                </span>
+            </div>
+        </div>
+        
+        <img class="closing-image" src="./images/closing image.jpg"> 
+        <div class="legal-content">
+            <span class="brand-name">Avocado© </span>| <a href="#" class="imprint"> Imprint </a> | <a href="#" class="data-policy"> Data policy</a>
+        </div>
+    </body>
+</html>

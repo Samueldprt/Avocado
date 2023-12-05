@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Avocado</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <style>     /* Bearbeitet das Visual von dem darunter stehenden Objekt, in diesem Fall Header-Image*/
+            body{
+                font-family: 'Raleway', sans-serif;
+                background-color:#5F6F52 ;
+                margin:0;
+                padding:0;    
+            }
+
+            /* width */
+            ::-webkit-scrollbar {
+              width: 10px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+              background: #c8d4a1;
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+              background: #768a66;
+            }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+              background: #4e5c44;
+            }
+
+
+            
+            .header-image {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                object-position: 50% 50%;
+            }
+
+            .headline {
+                color:#FEFAE0;
+                margin-left: 100px;    
+                margin-right: 100px;
+                font-size: 80px;
+                line-height: 29px;
+                font-weight: bolder;
+                margin-top: 0.67em;
+                margin-bottom: 0.67em;
+            }
+
+            .image-container{
+                background-color: #B99470;
+                padding-bottom: 12px;
+                }
+
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-right: 40px;
+                background-color: #5F6F52;
+            }
+
+            a{
+                text-decoration: none;  /* Unterstreichung entfernen */
+            }
+
+
+            p a{
+                color: #A9B388;
+                
+                margin-left: 14px;
+                font-weight: bold;
+            }
+
+
+            p a:hover {
+                color: #959e78;
+            }
+
+            .subtext{
+                color: #A9B388;
+                font-size: 20px;
+            }
+
+            .text-container{
+                color: #FEFAE0;
+                text-align: center;
+                Padding-top: 50px;
+                padding-bottom: 150px;
+                font-weight: 600;
+                font-size: 60px;
+            }
+
+            .maps-container{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 16px;
+            }
+
+            .text-container-maps-right{
+                margin-left: 10px;
+                width: 30%;
+                color: #FEFAE0;
+                font-weight: 600;
+                
+            } 
+
+            .maps-frame{
+                border: 0;
+                height: 350px;
+                width: 70%;
+            }
+
+            .logo{
+                width: 120px;
+                padding-right: 120px;
+                object-fit: cover;
+
+            }
+            .sub-images-container{
+                justify-content:space-between;
+                object-fit: cover;
+                display: flex;
+                background-color: #5F6F52;
+                padding-bottom: 14px;
+                height: 380px;
+                padding-top: 70px;
+            }
+            .avocado-recipes{
+                
+                padding-left: 2%;
+                height: 300px;
+                width: 30%;                
+                object-position: 50% 40%;   
+            }
+            
+            .avocado-supplements{
+                
+                height: 300px;
+                width: 30%;                
+                object-position: 50% 60%;   
+            }
+
+            .avocado-reproduce{
+                
+                height: 300px;
+                width: 30%;
+                padding-right: 2%;
+                object-position: 50% 40%;   
+            }
+            
+            .description{
+                font-size: 30px;
+                font-weight: 450;
+                display:flex;
+                line-height: 50px;
+                padding-left: 200px;
+                padding-right: 200px;
+            }
+            
+            .categorie{
+                color: #FEFAE0;    
+                font-size: 33px;    
+                font-weight: 450;       
+                display:inline-block;    
+                margin-bottom: 50px;
+            }
+            
+            .categorie:hover{
+                    color: #d6d3bc;
+            }
+
+            .recipes{
+                margin-left: 246px;
+            }
+
+            .reproduction{
+                margin-left: 410px;
+            }
+
+            .supplements{
+                margin-left: 470px;
+            }
+
+            .closing-image{
+                object-fit: cover;
+                width: 100%;
+                height: 200px;
+                object-position: 50% 76%;
+            }
+            .legal-content{
+                background-color: #5F6F52;
+                font-weight: 700;
+                font-size: 13px;
+                text-align: center;
+                color: #B99470;
+            }
+
+            .imprint{
+                color: #B99470;
+                margin-right:20px;
+                margin-left: 20px;
+            }
+
+            .imprint:hover{
+                color: #a08162;
+            }
+
+            .data-policy{
+                color: #B99470;
+                margin-left: 20px;
+            }
+
+            .data-policy:hover{
+                color: #a08162;
+            }
+
+            .brand-name{
+                margin-right: 20px;
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a href="file:///f%3A/Dateien/Coding%20Projekts/Avocado/index.html#" class="headline">    
+                Avocado <br> <span class="subtext"> Its all about the nutrients. </span>
+            </a> 
+            <img class="logo" src="./images/Avocado Logo.png">
+
+           
+
+            <div>
+                <p>
+                    <a href="https://www.instagram.com/samueldprt/" > Instagram </a> 
+                    <a href="https://github.com/xNuk3m" > GitHub </a>
+                    <a href="https://www.youtube.com/channel/UC0GvxIorfzXKewknR-4Apug" > YouTube </a> 
+                    <a href="https://www.linkedin.com/in/samuel-dippert-815997274/" > LinkedIn </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img class="header-image" src="./images/header.jpg">     <!-- img src= Bild Quelle, class ist für verbindung mit Style , siehe oben -->
+
+
+            <div class="text-container">
+                Fresh. Green. Yummy. <br> <br>
+                <span class="description"> Avocados, a green gem of nutrition, boast creamy texture and rich taste. 
+                    Packed with healthy fats, they're a culinary delight and promote heart health. 
+                    From guacamole to salads, their versatility shines. <br>
+                    A source of potassium and fiber, avocados offer a satisfying, nutrient-packed addition to any meal. 
+                    Embrace this vibrant fruit for a delicious and wholesome culinary experience!
+                </span>
+
+            </div>
+        </div>
+        <div class="sub-images-container">
+            
+                <img class="sub-images-container avocado-recipes" src="./images/Avocado recipes.jpg">
+            
+                <img class="sub-images-container avocado-supplements" src="./images/Avocado Supplements.jpg">
+
+                <img class="sub-images-container avocado-reproduce" src="./images/Avocado Reproduce.jpg">
+
+                    
+
+        </div>
+        
+        <div class="categorie">
+            <a href="file:///F:/Dateien/Coding%20Projekts/Avocado/recipes.html" class="categorie recipes"> Recipes </a> 
+            <a href="file:///F:/Dateien/Coding%20Projekts/Avocado/supplements.html" class="categorie supplements"> Supplements </a>
+            <a href="#" class="categorie reproduction"> Reproduction </a>
+
+        </div>
+        <div>
+            <img class="closing-image" src="./images/closing image.jpg">
+        </div>
+        <div class="legal-content">
+            <span class="brand-name">Avocado© </span>| <a href="#" class="imprint"> Imprint </a> | <a href="#" class="data-policy"> Data policy</a>
+        </div>
+
+
+        
+    </body>
+
+</html>
